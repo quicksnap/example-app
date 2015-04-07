@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "__DEV__": true,
+    "__SERVER__": true,
+    "request": true,
+    "debug": true,
+    "Promise": true,
+    "jest": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "pit": false,
+    "pit": false,
+    "it": false,
+    "iit": false,
+    "xit": false,
+    "describe": false,
+    "ddescribe": false,
+    "xdescribe": false,
+    "expect": false
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "plugins": [
+      "react"
+    ],
+  "rules": {
+    // Strict mode
+    "strict": [2, "global"],
+
+    // Code style
+    "no-multi-spaces": false,
+    "key-spacing": false,
+    "indent": [2, 2],
+    "quotes": [2, "single"],
+    "no-underscore-dangle": false,
+    "new-cap": false,
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+    // "no-unused-vars": false,
+    "no-empty": false,
+    "no-use-before-define": "nofunc",
+
+    "react/display-name": 0,
+    "react/jsx-quotes": [1, "single", "avoid-escape"],
+    "react/jsx-no-undef": 1,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 0,
+    "react/jsx-uses-vars": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-multi-comp": 0,
+    "react/no-unknown-property": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 0,
+    "react/self-closing-comp": 1,
+    "react/wrap-multilines": 1
+  }
+}
